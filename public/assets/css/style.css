@@ -1,9 +1,15 @@
 .burgerBox{
-    border: 1px solid black;
-    border-radius: 5px;
+
     margin: 5px;
 }
 
-.ul{
-    margin-left: -40px;
+ul{
+    padding-left:0px;
+    background-color:beige;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.burgerList{
+
 }

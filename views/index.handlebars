@@ -1,7 +1,7 @@
 <div class = "container">
 
 <div class = "row">
-      <h2>Add a Burger</h2>
+      <h1>Order a Burger!</h1>
 </div>
   <div class = "row">
     <div class = "col"><!-- start of col 1 -->    
@@ -9,15 +9,15 @@
         <div class="form-group">
           <label for="newBurger">Burger Name:</label>
           <input type="text" id="newBurger" name="name">
-          <button type="submit">Add a burger</button>
+          <button type="submit">Order Burger</button>
         </div>
         
       </form>
     </div> <!-- end col 1 -->
   </div> <!-- end row 1 -->
   <div class = "row">
-    <div class = "col">
-      <h1>Burgers yet to be devoured!</h1>
+    <div class="burgerList" class = "col">
+      <h2>Burgers Ordered!</h2>
       <ul>
         {{#each burger}}
           {{#unless devoured}}
@@ -29,8 +29,8 @@
         {{/each}}
       </ul>
     </div> <!-- end col 1 -->
-    <div class = "col">
-      <h1>Devoured burgers!</h1>
+    <div class='burgerList' class = "col" >
+      <h2>Burgers Eaten!</h2>
       <ul>
        
         {{#each burger}}
