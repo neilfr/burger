@@ -58,7 +58,7 @@ var orm={
         queryString += "VALUES (";
         queryString += printQuestionMarks(vals.length);
         queryString += ") ";
-    
+        console.log("the query string is:");
         console.log(queryString);
     
         connection.query(queryString, vals, function(err, result) {
